@@ -1,0 +1,44 @@
+{
+  "name": "web-auth",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "scripts": {
+    "serve": "nodemon dist/main.js",
+    "watch": "webpack --watch"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "auth0"
+  ],
+  "author": "Manav Misra <manavm@visionwebsoft.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "nodemon": "^2.0.4",
+    "prettier": "2.1.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
