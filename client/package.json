@@ -5,7 +5,9 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "typography": "^0.16.19",
+    "typography-theme-fairy-gates": "^0.16.19"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -45,6 +47,7 @@
     "husky": ">=4",
     "lint-staged": ">=10",
     "prettier": "2.1.2",
+    "react-typography": "^0.16.19",
     "stylelint": "^13.7.2",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
